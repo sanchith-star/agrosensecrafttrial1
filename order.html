@@ -1,210 +1,441 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Order | AgroSense Dynamics</title>
-<link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Order | AgroSense Dynamics</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        body {
+            background: #07120b;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .order-page {
+            max-width: 750px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .order-card {
+            background: #102419;
+            border: 1px solid #2e7545;
+            border-radius: 20px;
+            padding: 35px;
+            box-shadow: 0 0 30px rgba(0,255,100,0.12);
+        }
+
+        h1 {
+            text-align: center;
+            color: #70ff91;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            text-align: center;
+            color: #b9cdbf;
+            margin-bottom: 30px;
+        }
+
+        .price {
+            text-align: center;
+            padding: 20px;
+            background: #0b1b10;
+            border: 1px solid #2e7545;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        .price h2 {
+            margin: 0;
+            color: #70ff91;
+            font-size: 35px;
+        }
+
+        .price p {
+            color: #a9b9ad;
+            margin-bottom: 0;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #dceade;
+            font-weight: bold;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 14px;
+            border-radius: 9px;
+            border: 1px solid #397d4f;
+            background: #09150d;
+            color: white;
+            font-size: 16px;
+            outline: none;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            border-color: #70ff91;
+            box-shadow: 0 0 8px rgba(112,255,145,0.2);
+        }
+
+        textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .total-box {
+            text-align: center;
+            background: #081b0e;
+            border: 1px solid #397d4f;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+
+        .total-title {
+            color: #b9cdbf;
+            margin-bottom: 8px;
+        }
+
+        #total {
+            color: #70ff91;
+            font-size: 34px;
+            font-weight: bold;
+        }
+
+        .order-button {
+            width: 100%;
+            padding: 16px;
+            border: none;
+            border-radius: 10px;
+            background: #49d875;
+            color: #061008;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .order-button:hover {
+            background: #70ff91;
+            transform: translateY(-2px);
+            box-shadow: 0 0 20px rgba(112,255,145,0.3);
+        }
+
+        .back-home {
+            display: block;
+            width: fit-content;
+            margin: 25px auto;
+            padding: 12px 24px;
+            border: 1px solid #397d4f;
+            border-radius: 9px;
+            color: #70ff91;
+            text-decoration: none;
+        }
+
+        .back-home:hover {
+            background: #132d1c;
+        }
+
+        .note {
+            text-align: center;
+            color: #8fa596;
+            font-size: 13px;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+
+    </style>
+
 </head>
+
 
 <body>
 
-<header>
-<nav>
+<div class="order-page">
 
-<div class="logo">
-🌱 AgroSense <span>Dynamics</span>
+    <div class="order-card">
+
+        <h1>Order AgroSense Dynamics</h1>
+
+        <p class="description">
+            Smart technology for modern and sustainable agriculture.
+        </p>
+
+
+        <!-- PRODUCT PRICE -->
+
+        <div class="price">
+
+            <h2>₹4,999</h2>
+
+            <p>
+                Price per AgroSense system
+            </p>
+
+        </div>
+
+
+        <!-- ORDER FORM -->
+
+        <form
+            action="https://formsubmit.co/svdiitcomp3@gmail.com"
+            method="POST"
+        >
+
+
+            <!-- FORMSUBMIT SETTINGS -->
+
+            <input
+                type="hidden"
+                name="_subject"
+                value="New AgroSense Dynamics Order"
+            >
+
+            <input
+                type="hidden"
+                name="_template"
+                value="table"
+            >
+
+            <input
+                type="hidden"
+                name="_captcha"
+                value="false"
+            >
+
+
+            <!-- CUSTOMER NAME -->
+
+            <div class="form-group">
+
+                <label for="name">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="Customer Name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+            </div>
+
+
+            <!-- PHONE NUMBER -->
+
+            <div class="form-group">
+
+                <label for="phone">
+                    Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="Phone Number"
+                    placeholder="Enter your 10-digit phone number"
+                    maxlength="10"
+                    pattern="[0-9]{10}"
+                    required
+                >
+
+            </div>
+
+
+            <!-- DELIVERY ADDRESS -->
+
+            <div class="form-group">
+
+                <label for="address">
+                    Delivery Address
+                </label>
+
+                <textarea
+                    id="address"
+                    name="Delivery Address"
+                    placeholder="Enter your complete delivery address"
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <!-- QUANTITY -->
+
+            <div class="form-group">
+
+                <label for="quantity">
+                    Quantity
+                </label>
+
+                <input
+                    type="number"
+                    id="quantity"
+                    name="Quantity"
+                    value="1"
+                    min="1"
+                    required
+                    oninput="calculateTotal()"
+                >
+
+            </div>
+
+
+            <!-- PAYMENT -->
+
+            <div class="form-group">
+
+                <label for="payment">
+                    Payment Method
+                </label>
+
+                <select
+                    id="payment"
+                    name="Payment Method"
+                    required
+                >
+
+                    <option value="">
+                        Select payment method
+                    </option>
+
+                    <option value="GPay">
+                        GPay
+                    </option>
+
+                    <option value="Card">
+                        Card
+                    </option>
+
+                    <option value="Cash on Delivery">
+                        Cash on Delivery
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- TOTAL -->
+
+            <div class="total-box">
+
+                <div class="total-title">
+                    Total Order Amount
+                </div>
+
+                <div id="total">
+                    ₹4,999
+                </div>
+
+                <input
+                    type="hidden"
+                    id="totalHidden"
+                    name="Total Amount"
+                    value="₹4,999"
+                >
+
+            </div>
+
+
+            <!-- SUBMIT BUTTON -->
+
+            <button
+                type="submit"
+                class="order-button"
+            >
+                Place Order
+            </button>
+
+
+            <p class="note">
+                Your order information will be submitted to
+                AgroSense Dynamics for processing.
+            </p>
+
+        </form>
+
+    </div>
+
+
+    <!-- BACK HOME -->
+
+    <a
+        href="index.html"
+        class="back-home"
+    >
+        ← Back to Home
+    </a>
+
 </div>
 
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="solutions.html">Solutions</a></li>
-<li><a href="systems.html">Systems</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-
-</nav>
-</header>
-
-<div class="page-title">
-
-<h1>🛒 Order AgroSense</h1>
-
-<p>
-₹4,999 per system • Delivery to your mentioned address
-</p>
-
-</div>
-
-<section>
-
-<div class="container">
-
-<div class="form-box">
-
-<form
-action="https://formsubmit.co/svdiitcomp3@gmail.com"
-method="POST">
-
-<input
-type="hidden"
-name="_subject"
-value="New AgroSense Dynamics Order">
-
-<input
-type="hidden"
-name="_captcha"
-value="false">
-
-<input
-type="hidden"
-name="_template"
-value="table">
-
-<div class="form-group">
-
-<label>Full Name</label>
-
-<input
-type="text"
-name="Customer Name"
-placeholder="Enter your full name"
-required>
-
-</div>
-
-<div class="form-group">
-
-<label>Phone Number</label>
-
-<input
-type="tel"
-name="Phone Number"
-placeholder="Enter phone number"
-required>
-
-</div>
-
-<div class="form-group">
-
-<label>Delivery Address</label>
-
-<textarea
-name="Delivery Address"
-placeholder="Enter complete delivery address"
-required></textarea>
-
-</div>
-
-<div class="form-group">
-
-<label>Quantity</label>
-
-<input
-type="number"
-id="quantity"
-name="Quantity"
-value="1"
-min="1"
-required
-oninput="calculateTotal()">
-
-</div>
-
-<div class="total">
-
-Total Amount
-
-<span id="total">₹4,999</span>
-
-<input
-type="hidden"
-id="totalHidden"
-name="Total Amount"
-value="₹4,999">
-
-</div>
-
-<div class="form-group">
-
-<label>Payment Method</label>
-
-<select name="Payment Method" required>
-
-<option value="">
-Select payment method
-</option>
-
-<option value="Cash on Delivery">
-Cash on Delivery
-</option>
-
-<option value="UPI / GPay">
-UPI / GPay
-</option>
-
-<option value="Card">
-Card
-</option>
-
-</select>
-
-</div>
-
-<button
-type="submit"
-class="btn primary"
-style="border:none;cursor:pointer;width:100%;">
-Place Order
-</button>
-
-</form>
-
-</div>
-
-<div class="back">
-
-<a href="index.html" class="btn secondary">
-← Back to Home
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<footer>
-<p>© 2026 <strong>AgroSense Dynamics</strong></p>
-</footer>
 
 <script>
 
-const PRICE = 4999;
+    const PRICE = 4999;
 
-function calculateTotal() {
 
-let quantity =
-parseInt(document.getElementById("quantity").value);
+    function calculateTotal() {
 
-if (isNaN(quantity) || quantity < 1) {
-quantity = 1;
-}
+        let quantity =
+            parseInt(
+                document.getElementById("quantity").value
+            );
 
-let total = PRICE * quantity;
 
-let formatted =
-"₹" + total.toLocaleString("en-IN");
+        if (isNaN(quantity) || quantity < 1) {
 
-document.getElementById("total").innerText =
-formatted;
+            quantity = 1;
 
-document.getElementById("totalHidden").value =
-formatted;
+            document.getElementById("quantity").value = 1;
 
-}
+        }
+
+
+        let total = PRICE * quantity;
+
+
+        let formatted =
+            "₹" +
+            total.toLocaleString("en-IN");
+
+
+        document.getElementById("total").innerText =
+            formatted;
+
+
+        document.getElementById("totalHidden").value =
+            formatted;
+
+    }
+
+
+    calculateTotal();
 
 </script>
 
+
 </body>
+
 </html>
